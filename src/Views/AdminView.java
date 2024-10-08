@@ -28,24 +28,27 @@ public class AdminView {
         do {
 
             System.out.println();
-            System.out.println("------------------------------------------");
-            System.out.println("----------- Menu Administrador -----------");
-            System.out.println("------------------------------------------");
-            System.out.println("1. Total de vendas");
-            System.out.println("2. Total de lucro");
-            System.out.println("3. Vendas e lucro por mês");
-            System.out.println("4. Atração Favorita Adultos");
-            System.out.println("5. Atração Favorita Crianças");
-            System.out.println("6. Atração Favorita");
-            System.out.println("7. Atração mais lucrativa");
-            System.out.println("8. Atração menos lucrativa");
-            System.out.println("9. Atração que custa menos por segundo");
-            System.out.println("------------------------------------------");
+            System.out.println("-------------------------------------------------------");
+            System.out.println("-------------------------------------------------------");
+            System.out.println("------------------ Menu Administrador -----------------");
+            System.out.println("-------------------------------------------------------");
+            System.out.println("-------------------------------------------------------");
+            System.out.println("1. Total de vendas    ---------------------------------");
+            System.out.println("2. Total de Lucro    ----------------------------------");
+            System.out.println("3. Vendas e Lucro por mês    --------------------------");
+            System.out.println("4. Atração Favorita - Adultos    ----------------------");
+            System.out.println("5. Atração Favorita - Crianças    ---------------------");
+            System.out.println("6. Atração Favorita - Número de Bilhetes    -----------");
+            System.out.println("7. Atração mais Lucrativa    --------------------------");
+            System.out.println("8. Atração menos Lucrativa    -------------------------");
+            System.out.println("9. Atração que custa menos por segundo à Empresa    ---");
+            System.out.println("-------------------------------------------------------");
             System.out.println("10. Criar novo User");
             System.out.println("0. Sair");
-
+            System.out.println();
             System.out.print("Selecione uma opção: ");
             opcao = input.nextInt();
+            System.out.println();
 
 
             switch (opcao) {
@@ -61,18 +64,35 @@ public class AdminView {
                     break;
 
                 case 6:
-                    System.out.println(adminController.favGeral06());
+                    String maisBilhetesVendidos = adminController.maisBilhetes().getNome();
+                    int quantidadeBilhetes = adminController.vendasEstaAtracao(adminController.maisBilhetes());
+                    System.out.println("--->>");
+                    System.out.println("--->> A Atraçao favorita foi " + maisBilhetesVendidos + " com " + quantidadeBilhetes + " bilhetes vendidos.");
+                    System.out.println("--->>");
                     break;
 
                 case 7:
-                    System.out.println(adminController.atracaoMaisLucro07());
+                    String maisLucro = adminController.maisLucro().getNome();
+                    double totalLucro = adminController.lucroEstaAtracao(adminController.maisLucro());
+                    System.out.println("--->> ");
+                    System.out.println("--->> A Atração que gerou MAIS lucro foi " + maisLucro + " com um total de " + totalLucro + "€.");
+                    System.out.println("--->> ");
                     break;
 
                 case 8:
-                    System.out.println(adminController.atracaoMenosLucro08());
+                    String menosLucro = adminController.menosLucro().getNome();
+                    double totalMenosLucro = adminController.lucroEstaAtracao(adminController.menosLucro());
+                    System.out.println("--->>");
+                    System.out.println("--->> A Atração que gerou MENOS lucro foi " + menosLucro + " com um total de " + totalMenosLucro + "€.");
+                    System.out.println("--->>");
                     break;
+
                 case 9:
-                    System.out.println(adminController.menosCustoSegundo());
+                    double custoSec = adminController.custoSegundo(adminController.atracaoQueCustaMenosParaManter());
+                    String atracaoMaisBarataDeManter = adminController.atracaoQueCustaMenosParaManter().getNome();
+                    System.out.println("--->>");
+                    System.out.println("--->> A Atração que custa menos para manter por segundo é " + atracaoMaisBarataDeManter + " com um custo de " + custoSec + " por segundo.");
+                    System.out.println("--->>");
                     break;
                 case 10:
 
@@ -90,7 +110,7 @@ public class AdminView {
                         System.out.println("0. Sair");
                         System.out.println();
                         System.out.print("Escolher: ");
-
+                        System.out.println();
                         userInput = input.nextInt();
 
                         if (userInput == 1 || userInput == 2) {
@@ -99,15 +119,17 @@ public class AdminView {
                             System.out.println();
                             System.out.print("Inserir: ");
                             String usernameInput = input.next();
-
-                            System.out.println("******** Insira a password *********");
+                            System.out.println();
+                            System.out.println("------ Insira a password ------");
                             System.out.println();
                             System.out.print("Inserir: ");
                             String passwordInput = input.next();
-
+                            System.out.println();
                             this.novoUser(userInput, usernameInput, passwordInput);
-                            System.out.println("User criado com sucesso!");
-                            System.out.println("__________________________________________________");
+                            System.out.println("------------------------------");
+                            System.out.println("-- User criado com sucesso! --");
+                            System.out.println("------------------------------");
+                            System.out.println();
                             break;
                         }
                     } while (userInput != 0);

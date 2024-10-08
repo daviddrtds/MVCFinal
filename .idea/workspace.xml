@@ -5,39 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85ff733c-8a16-4812-b407-21f91bac70dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Cesaeland_atracoes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Cesaeland_custos.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Cesaeland_logins.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/Cesaeland_vendas.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVCFinal.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/EngController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Atracao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Custo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Venda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repositories/AtracoesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repositories/CustosRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repositories/VendasRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tools/CsvAtracoesReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tools/CsvCustosReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tools/CsvLoginsReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tools/CsvVendasReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/AdminView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/ClientView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/EngView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Views/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/AdminView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,23 +34,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/david/Desktop/cesae/exercicios/MVCFinal",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/david/Desktop/MVCFinal&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Workinprogress\MVCFinal\Files" />
