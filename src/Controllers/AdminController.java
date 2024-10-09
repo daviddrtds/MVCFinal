@@ -174,12 +174,6 @@ public class AdminController {
     }
 
 
-
-
-
-
-
-
     /**
      * Conta o número de bilhetes vendidos para uma atração específica.
      *
