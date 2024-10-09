@@ -16,7 +16,8 @@ public class AdminView {
         this.adminController = new AdminController();
     }
 
-    public void menu() throws IOException {
+
+    public void menuAdmin() throws IOException {
 
         // Import Scanner
         Scanner input = new Scanner(System.in);
@@ -95,15 +96,13 @@ public class AdminView {
                     System.out.println("--->>");
                     break;
                 case 10:
-
-
                     do {
 
                         System.out.println("------------------------------");
                         System.out.println("------ Criar novo User -------");
                         System.out.println("------------------------------");
                         System.out.println();
-                        System.out.println("Escola o tipo de User");
+                        System.out.println("Escolha o tipo de User    -----");
                         System.out.println("1. ADMIN");
                         System.out.println("2. ENG");
                         System.out.println("------------------------------");
@@ -133,10 +132,15 @@ public class AdminView {
                             break;
                         }
                     } while (userInput != 0);
+                    break;
 
                 default:
+                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
+                    System.out.println("x-x-x- Opção Inválida! -x-x-x-x");
+                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
+                    System.out.println();
+                    break;
             }
-
         } while (opcao != 0);
 
     }
@@ -144,6 +148,7 @@ public class AdminView {
 
     public void novoUser(int input, String username, String password) throws IOException {
         String loginType = "";
+
         if (input == 1) {
             loginType = "ADMIN";
         } else {

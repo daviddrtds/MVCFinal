@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85ff733c-8a16-4812-b407-21f91bac70dd" name="Changes" comment="" />
+    <list default="true" id="85ff733c-8a16-4812-b407-21f91bac70dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/EngController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/EngController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Atracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Atracao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/AdminView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/ClientView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/ClientView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/EngView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/EngView.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
