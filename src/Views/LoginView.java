@@ -71,7 +71,7 @@ public class LoginView {
 
 
         do {
-
+            System.out.println();
             System.out.println("------------------------------");
             System.out.println("----------- Login ------------");
             System.out.println("------------------------------");
@@ -84,6 +84,7 @@ public class LoginView {
 
             switch (loginController.validateLogin(usernameInput, passwordInput)) {
                 case 0: // Inválido
+                    System.out.println();
                     System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
                     System.out.println("x-x-x- Acesso Inválido -x-x-x-x");
                     System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");

@@ -98,30 +98,26 @@ public class AdminView {
                 case 10:
                     do {
 
-                        System.out.println("------------------------------");
-                        System.out.println("------ Criar novo User -------");
-                        System.out.println("------------------------------");
+                        System.out.println("-------------------------------------------------------");
+                        System.out.println("------------------- Criar novo User -------------------");
+                        System.out.println("-------------------------------------------------------");
                         System.out.println();
-                        System.out.println("Escolha o tipo de User    -----");
-                        System.out.println("1. ADMIN");
-                        System.out.println("2. ENG");
+                        System.out.println("Escolha o tipo de User    ----");
+                        System.out.println("------------------------------");
+                        System.out.println("1. ADMIN    ------------------");
+                        System.out.println("2. ENG    --------------------");
                         System.out.println("------------------------------");
                         System.out.println("0. Sair");
                         System.out.println();
                         System.out.print("Escolher: ");
-                        System.out.println();
                         userInput = input.nextInt();
+                        System.out.println();
 
                         if (userInput == 1 || userInput == 2) {
 
-                            System.out.println("------ Insira o username -----");
-                            System.out.println();
-                            System.out.print("Inserir: ");
+                            System.out.print("Username: ");
                             String usernameInput = input.next();
-                            System.out.println();
-                            System.out.println("------ Insira a password ------");
-                            System.out.println();
-                            System.out.print("Inserir: ");
+                            System.out.print("Password: ");
                             String passwordInput = input.next();
                             System.out.println();
                             this.novoUser(userInput, usernameInput, passwordInput);
@@ -136,17 +132,17 @@ public class AdminView {
 
 
                 case 0:
-                    System.out.println("------------------------------");
-                    System.out.println("--------- Até Breve! ---------");
-                    System.out.println("------------------------------");
+                    System.out.println("-------------------------------------------------------");
+                    System.out.println("--------------------- Até Breve! ----------------------");
+                    System.out.println("-------------------------------------------------------");
                     System.out.println();
                     break;
 
 
                 default:
-                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
-                    System.out.println("x-x-x- Opção Inválida! -x-x-x-x");
-                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
+                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-");
+                    System.out.println("x-x-x-x-x-x-x-x-x- Opção Inválida! -x-x-x-x-x-x-x-x-x-x-");
+                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-");
                     System.out.println();
                     break;
             }

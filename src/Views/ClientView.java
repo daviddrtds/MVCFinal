@@ -39,28 +39,33 @@ public class ClientView {
 
             switch (opcaoCliente) {
                 case 1:
-                    System.out.println("\n|||||||||||||||||||||||||||||||||||||||||");
-                    System.out.println("\n [1. CONSULTAR ATRAÇÕES DISPONÍVEIS]");
-                    System.out.println(" ");
+                    System.out.println();
+                    System.out.println("-------------------------------------------------------");
+                    System.out.println("----------------- Atrações Disponíveis ----------------");
+                    System.out.println("-------------------------------------------------------");
                     this.imprimirTabelaAtracoes();
-                    System.out.println(" ");
+                    System.out.println();
                     break;
                 case 2:
-                    System.out.println("\n|||||||||||||||||||||||||||||||||||||||||");
-                    System.out.println("\n [2. CONSULTAR ATRAÇÕES FAVORITAS]");
-                    System.out.println(" ");
+                    System.out.println();
+                    System.out.println("-------------------------------------------------------");
+                    System.out.println("------------------ Atrações Favoritas -----------------");
+                    System.out.println("-------------------------------------------------------");
                     this.imprimeAtracaoMaisProcuradaAdultos();
                     this.imprimeAtracaoMaisProcuradaCriancaS();
-                    System.out.println(" ");
+                    System.out.println();
                     break;
                 case 3:
-                    System.out.println(" ");
-                    System.out.println("\n [3. SAIR ]");
-                    System.out.println(" ");
-                    System.out.println("\n|||||||||||||||||||||||||||||||||||||||||");
+                    System.out.println("-------------------------------------------------------");
+                    System.out.println("--------------------- Até Breve! ----------------------");
+                    System.out.println("-------------------------------------------------------");
+                    System.out.println();
                     break;
                 default:
-                    System.out.println("Opção inválida! Tente novamente.");
+                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-");
+                    System.out.println("x-x-x-x-x-x-x-x-x- Opção Inválida! -x-x-x-x-x-x-x-x-x-x-");
+                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-");
+                    System.out.println();
                     break;
             }
         } while (opcaoCliente != 3); // Enquanto o input do user é diferente de 3 (MENU INICIAL)// TERMINA A FUNCAO
@@ -68,7 +73,7 @@ public class ClientView {
 
 
     public void imprimirTabelaAtracoes() throws FileNotFoundException {
-        System.out.println("\n-> TABELA DE ATRAÇÕES:");
+
         System.out.println("___________________________________________________________________");
         clientController.imprimirAtracoes();
         System.out.println("___________________________________________________________________");
