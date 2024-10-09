@@ -23,13 +23,18 @@ public class ClientView {
         int opcaoCliente;
 
         do { // Apresenta MENU CLIENTE
-            System.out.println("\n|||||||||||||||||||||||||||||||||||||||||");
-            System.out.println("\n \uD83D\uDF90 MENU CLIENTE \uD83D\uDF90 \n");
-            System.out.println("[1] CONSULTAR ATRAÇÕES DISPONÍVEIS");
-            System.out.println("[2] CONSULTAR ATRAÇÕES FAVORITAS");
-            System.out.println("[3] SAIR");
-            System.out.println(" ");
-            System.out.println("> ESCOLHE INSERINDO A OPÇÃO [NUMÉRICA]: ");
+            System.out.println();
+            System.out.println("-------------------------------------------------------");
+            System.out.println("-------------------------------------------------------");
+            System.out.println("--------------------- Menu Cliente --------------------");
+            System.out.println("-------------------------------------------------------");
+            System.out.println("-------------------------------------------------------");
+            System.out.println("1. Consultar Atrações Disponíveis    ------------------");
+            System.out.println("2. Consultar Atrações Favoritas    --------------------");
+            System.out.println("-------------------------------------------------------");
+            System.out.println("3. Sair");
+            System.out.println();
+            System.out.print("Selecione uma opção: ");
             opcaoCliente = input.nextInt(); // Ler e guardar input do user (numero inteiro).
 
             switch (opcaoCliente) {

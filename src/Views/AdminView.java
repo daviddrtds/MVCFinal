@@ -134,6 +134,15 @@ public class AdminView {
                     } while (userInput != 0);
                     break;
 
+
+                case 0:
+                    System.out.println("------------------------------");
+                    System.out.println("--------- Até Breve! ---------");
+                    System.out.println("------------------------------");
+                    System.out.println();
+                    break;
+
+
                 default:
                     System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
                     System.out.println("x-x-x- Opção Inválida! -x-x-x-x");

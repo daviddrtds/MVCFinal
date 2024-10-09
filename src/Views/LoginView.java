@@ -14,7 +14,7 @@ public class LoginView {
         this.loginController = new LoginController();
     }
 
-    public void menu() throws FileNotFoundException {
+    public void menu() throws IOException {
 
         // Import Scanner
         Scanner input = new Scanner(System.in);
@@ -26,14 +26,15 @@ public class LoginView {
             System.out.println();
             System.out.println("-------------------------------------------------------");
             System.out.println("-------------------------------------------------------");
-            System.out.println("------------------ Bem-vindo ao CesaeLand -----------------");
+            System.out.println("--------------- Bem-vindo ao CESAELand© ---------------");
             System.out.println("-------------------------------------------------------");
             System.out.println("-------------------------------------------------------");
-            System.out.println("1. Prosseguir sem login");
-            System.out.println("2. Efetuar Login");
+            System.out.println("1. Prosseguir sem Login    ----------------------------");
+            System.out.println("2. Efetuar Login    -----------------------------------");
+            System.out.println("-------------------------------------------------------");
             System.out.println("3. Sair");
-
-            System.out.print("Insira a opção: ");
+            System.out.println();
+            System.out.print("Selecione uma opção: ");
             opcao = input.nextInt();
 
             switch (opcao) {
@@ -46,7 +47,11 @@ public class LoginView {
                     menuLogin();
                     break;
 
-                case 3: // Sair
+                case 3:
+                    System.out.println("------------------------------");
+                    System.out.println("--------- Até Breve! ---------");
+                    System.out.println("------------------------------");
+                    System.out.println();
                     break;
 
                 default:
@@ -64,30 +69,38 @@ public class LoginView {
         // Declarar variáveis
         String usernameInput, passwordInput;
 
-        // Ler inputs
-        System.out.print("Username: ");
-        usernameInput = input.next();
 
-        System.out.println("Password: ");
-        passwordInput = input.next();
+        do {
 
-        switch (loginController.validateLogin(usernameInput, passwordInput)) {
-            case 0: // Inválido
-                System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
-                System.out.println("x-x-x- Acesso Inválido -x-x-x-x");
-                System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
-                System.out.println();
-                break;
+            System.out.println("------------------------------");
+            System.out.println("----------- Login ------------");
+            System.out.println("------------------------------");
+            System.out.println();
+            System.out.print("Username: ");
+            usernameInput = input.next();
+            System.out.print("Password: ");
+            passwordInput = input.next();
+            System.out.println();
 
-            case 1: // ADMIN
-                AdminView adminView = new AdminView();
-                adminView.menuAdmin();
-                break;
+            switch (loginController.validateLogin(usernameInput, passwordInput)) {
+                case 0: // Inválido
+                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
+                    System.out.println("x-x-x- Acesso Inválido -x-x-x-x");
+                    System.out.println("x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x");
+                    System.out.println();
+                    break;
 
-            case 2: // ENGENHEIRO
-                EngView engView = new EngView();
-                engView.menuEng();
-                break;
-        }
+                case 1: // ADMIN
+                    AdminView adminView = new AdminView();
+                    adminView.menuAdmin();
+                    break;
+
+                case 2: // ENGENHEIRO
+                    EngView engView = new EngView();
+                    engView.menuEng();
+                    break;
+            }
+
+        } while (loginController.validateLogin(usernameInput, passwordInput) == 0);
     }
 }
