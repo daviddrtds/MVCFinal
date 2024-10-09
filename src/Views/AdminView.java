@@ -54,14 +54,19 @@ public class AdminView {
 
             switch (opcao) {
                 case 1: // Produto Mais Vendido - Unidades
+                    mostrarTotalVendas();
                     break;
                 case 2: // Produto Mais Vendido - Valor
+                    mostrarTotalLucro();
                     break;
                 case 3: // Venda Mais Unidades
+                    mostrarLucroMes();
                     break;
                 case 4: // Venda Mais Valor
+                    mostrarMProcuradaAdultos();
                     break;
                 case 5: // Total Vendas
+                    mostrarMProcuradaCriancas();
                     break;
 
                 case 6:
@@ -165,4 +170,41 @@ public class AdminView {
         fw.append("\n" + novoU);
         fw.flush();
     }
+
+
+    public void mostrarTotalVendas() {
+        System.out.println("--->>");
+        System.out.println("--->> Total de todas as Vendas: " + adminController.totalVendas());
+        System.out.println("--->>");
+    }
+
+    public void mostrarTotalLucro() {
+        System.out.println("--->>");
+        System.out.println("--->> Total de Lucro: " + adminController.lucroVendas());
+        System.out.println("--->>");
+    }
+
+    public void mostrarLucroMes() {
+        Double[][] lucromes = adminController.lucroMes();
+        System.out.println("--->>");
+        System.out.println("---- MES ----|---- Lucro ----|---- Total_Vendas ----");
+        for (int i = 0; i < lucromes.length; i++) {
+            System.out.println("---- " + lucromes[i][0] + " ----|---- " + lucromes[i][1] + " ----|---- " + lucromes[i][2] + " ----");
+        }
+        System.out.println("--->>");
+    }
+
+    public void mostrarMProcuradaAdultos() {
+        System.out.println("--->>");
+        System.out.println("--->> Mais procurada pelos Adultos: " + adminController.maisProcuradaAdultos().getNome());
+        System.out.println("--->>");
+    }
+
+    public void mostrarMProcuradaCriancas() {
+        System.out.println("--->>");
+        System.out.println("--->> Mais procurada pelas Crianças: " + adminController.maisProcuradaCriancas().getNome());
+        System.out.println("--->>");
+    }
+
+
 }

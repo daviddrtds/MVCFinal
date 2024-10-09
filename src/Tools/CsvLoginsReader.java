@@ -19,8 +19,6 @@ public class CsvLoginsReader {
         File usersFile = new File(filePath);
         Scanner usersScanner = new Scanner(usersFile);
 
-        // Avançar o cabeçalho à frente
-        usersScanner.nextLine();
 
         // Ciclo vai correr para cada linha (utilizador) do ficheiro
         while (usersScanner.hasNextLine()) {
@@ -36,7 +34,7 @@ public class CsvLoginsReader {
             String password = linhaDividida[2];
 
             // Criamos o utilizador atual
-            User userAtual = new User(loginType,username,password);
+            User userAtual = new User(loginType, username, password);
 
             // Adicionamos o utilizador atual ao ArrayList
             usersArray.add(userAtual);
