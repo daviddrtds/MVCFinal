@@ -102,11 +102,11 @@ public class AdminView {
                         System.out.println("------------------- Criar novo User -------------------");
                         System.out.println("-------------------------------------------------------");
                         System.out.println();
-                        System.out.println("Escolha o tipo de User    ----");
-                        System.out.println("------------------------------");
-                        System.out.println("1. ADMIN    ------------------");
-                        System.out.println("2. ENG    --------------------");
-                        System.out.println("------------------------------");
+                        System.out.println("Escolha o tipo de User    -----------------------------");
+                        System.out.println("-------------------------------------------------------");
+                        System.out.println("1. ADMIN    -------------------------------------------");
+                        System.out.println("2. ENG    ---------------------------------------------");
+                        System.out.println("-------------------------------------------------------");
                         System.out.println("0. Sair");
                         System.out.println();
                         System.out.print("Escolher: ");
@@ -121,9 +121,9 @@ public class AdminView {
                             String passwordInput = input.next();
                             System.out.println();
                             this.novoUser(userInput, usernameInput, passwordInput);
-                            System.out.println("------------------------------");
-                            System.out.println("-- User criado com sucesso! --");
-                            System.out.println("------------------------------");
+                            System.out.println("-------------------------------------------------------");
+                            System.out.println("--------------- User criado com sucesso! --------------");
+                            System.out.println("-------------------------------------------------------");
                             System.out.println();
                             break;
                         }
